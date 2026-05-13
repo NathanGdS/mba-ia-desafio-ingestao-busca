@@ -26,4 +26,5 @@ RESPONDA A "PERGUNTA DO USUÁRIO"
 """
 
 def search_prompt(question=None):
+    print(f"PERGUNTA: {question}")
     pass
