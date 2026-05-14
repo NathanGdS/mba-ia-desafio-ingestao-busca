@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 PDF_PATH = os.getenv("PDF_PATH")
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 500))
-CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 100))
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 1000))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 150))
 
 def ingest_pdf():
     print("="*65)

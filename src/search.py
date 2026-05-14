@@ -64,7 +64,7 @@ def search_prompt(question=None):
         connection=os.getenv("DATABASE_URL"),
         use_jsonb=True,
     )
-    context = store.similarity_search_with_score(question, k=3)
+    context = store.similarity_search_with_score(question, k=10)
 
     template = PromptTemplate(
         input_variables=["pergunta", "contexto"],
